@@ -1,17 +1,55 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	   <link rel="stylesheet" href="http://yandex.st/highlightjs/7.4/styles/default.min.css">
-	   <link rel="stylesheet" href="http://highlightjs.org/static/styles/monokai_sublime.css">
-	   <script src="http://yandex.st/highlightjs/7.4/highlight.min.js"></script>
-	   <script>hljs.initHighlightingOnLoad();</script>
-    </head>
-    <body>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
-        {{ content }}
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  
+  <link rel="stylesheet" href="http://yandex.st/highlightjs/7.4/styles/default.min.css">
+  <link rel="stylesheet" href="http://highlightjs.org/static/styles/monokai_sublime.css">
+  <script src="http://yandex.st/highlightjs/7.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 
-    </body>
+  <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/css/foundation.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/css/normalize.css" />
+
+  <!-- If you are using the gem version, you need this only -->
+  <link rel="stylesheet" href="css/app.css" />
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/vendor/custom.modernizr.js"></script>
+
+</head>
+<body>
+
+  <!-- body content here -->
+  {{ content }}
+
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? '//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/vendor/zepto' : '//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/foundation/foundation.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/foundation/foundation.alerts.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/foundation/foundation.clearing.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/foundation/foundation.cookie.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/foundation/foundation.dropdown.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/foundation/foundation.forms.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/foundation/foundation.joyride.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/foundation/foundation.magellan.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/foundation/foundation.orbit.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/foundation/foundation.placeholder.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/foundation/foundation.reveal.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/foundation/foundation.section.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/foundation/foundation.tooltips.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/foundation/foundation.topbar.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/foundation/foundation.interchange.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
 </html>

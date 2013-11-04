@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Store and read an image on Android SQlite
+tags: android sqlite image
 ---
 
 **{{ page.title }}** 

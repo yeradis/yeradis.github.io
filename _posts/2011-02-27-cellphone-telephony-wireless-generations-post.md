@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Cellphone telephony wireless generations
+tags: cellphone mobile wireless versions
 ---
 
 **{{ page.title }}** 
