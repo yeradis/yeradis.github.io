@@ -1,3 +1,24 @@
-markdown: rdiscount
-pygments: true
-permalink: /blog/:title
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            '@yeradis'
+tagline:          'A Jekyll theme'
+description:      'This is my private blog. It contains only my personal ideas and comments. It does not represent the ideas of my employer or the person/s, for/with whom I am working for..<br>'
+url:              http://blog.yeradis.com
+
+author:
+  name:           'Yeradis P. Barbosa Marrero'
+  url:            https://twitter.com/yeradis
+
+paginate:         5
+
+# Custom vars
+version:          2.0.0
+
+github:
+  repo:           https://github.com/poole/hyde

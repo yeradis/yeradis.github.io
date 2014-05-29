@@ -28,4 +28,4 @@ Bitmap bmp = BitmapFactory.decodeByteArray(blob, 0,blob.length, opts);
 friend.setImage_bmp(bmp);
 </code></pre>
 
-friend is an instance from a class, having a Bitmap property called Image_bmp ;)
+`friend` is an instance from a class, having a Bitmap property called Image_bmp ;)

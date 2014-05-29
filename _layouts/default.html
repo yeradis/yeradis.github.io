@@ -1,80 +1,15 @@
 <!DOCTYPE html>
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
+  {% include head.html %}
 
-    <link rel="stylesheet" href="http://yandex.st/highlightjs/7.4/styles/default.min.css">
-    <link rel="stylesheet" href="http://highlightjs.org/static/styles/monokai_sublime.css">
-    <script src="http://yandex.st/highlightjs/7.4/highlight.min.js"></script>
-    <script>
-    hljs.initHighlightingOnLoad();
-    </script>
+  <body>
 
-    <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/css/foundation.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/css/foundation.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/css/normalize.css">
+    {% include sidebar.html %}
 
-
-    <!-- If you are using the gem version, you need this only -->
-    <link rel="stylesheet" href="css/app.css" />
-
-</head>
-
-<body>
-
-    <div class="row">
-        <div class="large-12 columns">
-            <div class="panel">
-                <h1>@yeradis</h1>
-            </div>
-        </div>
+    <div class="content container">
+      {{ content }}
     </div>
 
-    <div class="row">
-    <!-- body content here -->
-    {{ content }}
-
-    </div>
-
-    <script src="//cdn.jsdelivr.net/foundation/5.2.3/js/vendor/jquery.js"></script>
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/vendor/fastclick.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/vendor/jquery.cookie.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/vendor/jquery.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/vendor/modernizr.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/vendor/placeholder.js"></script>
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation/foundation.abide.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation/foundation.accordion.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation/foundation.alert.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation/foundation.clearing.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation/foundation.dropdown.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation/foundation.equalizer.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation/foundation.interchange.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation/foundation.joyride.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation/foundation.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation/foundation.magellan.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation/foundation.offcanvas.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation/foundation.orbit.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation/foundation.reveal.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation/foundation.slider.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation/foundation.tab.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation/foundation.tooltip.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation/foundation.topbar.js"></script>
-
-    <script>
-    $(document).foundation();
-    </script>
-
-
-</body>
-
+  </body>
 </html>
