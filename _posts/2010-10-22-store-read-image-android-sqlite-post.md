@@ -4,7 +4,8 @@ title: Store and read an image on Android SQlite
 tags: android sqlite image
 ---
 
-**{{ page.title }}** 
+**{{ page.title }}**
+{{ post.date | date: "%B %e, %Y" }}
 
 To store an image file inside your SQLite db you should use a Blog field, and due Android SQlite limitations you should store info in this way:
 
