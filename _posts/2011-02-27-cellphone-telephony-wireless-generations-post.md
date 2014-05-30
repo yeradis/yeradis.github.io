@@ -6,8 +6,6 @@ comments: true
 permalink: telephony-wireless-generations
 ---
 
-**{{ page.title }}**
-
 Technology generations in wireless telephony are know as 2G,3G and 4G.
 
 Thanks to that technologies we can say "Look Ma': There is no wires!  This is magic!"

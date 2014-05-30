@@ -7,10 +7,6 @@ permalink: smart-goals
 share: true
 ---
 
-**{{ page.title }}**
-{{ post.date | date: "%B %e, %Y" }}
-
-
 If you dont know that a goal is a general statement about a desired outcome with one or more specific objectives that define in precise terms what is to be accomplished within a designated time frame and may be performance-related, developmental, a special project, or some combination all mentioned and that should should describe accomplishments, not activities.
 
 Then you are stupid, and that´s why we are reading this peace of shit that i call a blog post xD

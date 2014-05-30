@@ -7,9 +7,6 @@ permalink: logging-considerations
 share: true
 ---
 
-**{{ page.title }}**
-{{ post.date | date: "%B %e, %Y" }}
-
 Experience indicates that logging is an important component of the development cycle. It provides precise context about a run of our shitty application.
 
 But that precision with logging, only appears when used conscientiously xD

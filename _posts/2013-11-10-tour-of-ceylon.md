@@ -7,9 +7,6 @@ permalink: ceylon-tour-book
 share: true
 ---
 
-**{{ page.title }}**
-{{ post.date | date: "%B %e, %Y" }}
-
 <img src="http://1.bp.blogspot.com/-6c3x8808YIo/Un_jrSzqO2I/AAAAAAAA8TQ/khyADy_XZjw/s640/title_page.png"/>
 
 Ceylon is powerful programming language and platform with a modern SDK designed from scratch with a high modularity core that prioritises readability and predictability controlling the complexity with clarity while providing killer tools.

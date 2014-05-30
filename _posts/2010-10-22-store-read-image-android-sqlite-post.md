@@ -6,9 +6,6 @@ comments: true
 permalink: image-android-sqlite
 ---
 
-**{{ page.title }}**
-{{ post.date | date: "%B %e, %Y" }}
-
 To store an image file inside your SQLite db you should use a Blog field, and due Android SQlite limitations you should store info in this way:
 
 ```java
