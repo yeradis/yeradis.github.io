@@ -2,9 +2,11 @@
 layout: post
 title: Cellphone telephony wireless generations
 tags: cellphone mobile wireless versions
+comments: true
+permalink: telephony-wireless-generations
 ---
 
-**{{ page.title }}** 
+**{{ page.title }}**
 
 Technology generations in wireless telephony are know as 2G,3G and 4G.
 

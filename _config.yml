@@ -1,24 +1,39 @@
+encoding: UTF-8
 # Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables","no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+
+pygments:         true
 
 # Permalinks
 permalink:        pretty
 
 # Setup
 title:            '@yeradis'
-tagline:          'A Jekyll theme'
-description:      'This is my private blog. It contains only my personal ideas and comments. It does not represent the ideas of my employer or the person/s, for/with whom I am working for..<br>'
-url:              http://blog.yeradis.com
+tagline:          'Computer Science, Software, Development, Programming, Python, Java, MongoDB,Flask,RabbitMQ, Software Engineering'
+url:              http://yeradis.github.io
+shorturl:         yeradis.github.io
 
 author:
   name:           'Yeradis P. Barbosa Marrero'
   url:            https://twitter.com/yeradis
 
-paginate:         5
+paginate:         1
 
 # Custom vars
-version:          2.0.0
+version:          1.0.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           github.com/yeradis/yeradis.github.io
+
+# This is the list of pages to incldue in the header of the website.
+pages_list:
+  About: '/about/'
+  Archive: '/archive/'
+  Feed: '/atom.xml'
+
+# Allow URL Redirects:
+#  * https://help.github.com/articles/redirects-on-github-pages
+gems:
+  - jekyll-redirect-from
