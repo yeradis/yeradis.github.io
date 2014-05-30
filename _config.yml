@@ -19,7 +19,7 @@ author:
   name:           'Yeradis P. Barbosa Marrero'
   url:            https://twitter.com/yeradis
 
-paginate:         1
+paginate:         5
 
 # Custom vars
 version:          1.0.0
