@@ -12,9 +12,12 @@ Experience indicates that logging is an important component of the development c
 But that precision with logging, only appears when used conscientiously xD
 
 We usually use logging for:
+
 * aid in problem diagnosis in development without requiring a debug session.
 * aid in problem diagnosis in production where no debugging is possible.
+
 You can even use logging to:
+
 * help educate new/old developers in learning/remembering the application.
 
 All that sounds really nice for sure! right ?
