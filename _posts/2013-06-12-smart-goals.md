@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Don't be a stupid with your goals, be SMART
-tags: SMART PRINCIPLE
+tags: smart principle goals
+categories: smart principle goals
 comments: true
 permalink: smart-goals
 share: true

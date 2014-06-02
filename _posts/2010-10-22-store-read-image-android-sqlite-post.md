@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Store and read an image on Android SQlite
-tags: android sqlite image
+tags: android sqlite image programming development java
 comments: true
 permalink: image-android-sqlite
 ---

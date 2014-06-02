@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Some logging considerations for our disastrous code'
-tags: logging development
+tags: logging development programming
 comments: true
 permalink: logging-considerations
 share: true

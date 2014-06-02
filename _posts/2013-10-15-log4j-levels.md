@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'ALL > TRACE > DEBUG > INFO > WARN > ERROR > FATAL > OFF or how works Log4j levels in our shitty application'
-tags: log4j logging levels
+tags: log4j logging levels programming development
 comments: true
 permalink: log4j-levels
 share: true

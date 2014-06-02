@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Tour of Ceylon - unofficial book now available'
-tags: CYELON PROGRAMMING
+tags: cyelon programming development language book
 comments: true
 permalink: ceylon-tour-book
 share: true
