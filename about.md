@@ -11,7 +11,7 @@ title: About
 
 ## HELLO, I AM *YERADIS P. BARBOSA MARRERO*
 
-<img src="http://www.yeradis.com/img/360.png">
+<img src="public/images/yo-wide.png">
 
 I am a tireless autodidact with a thirst for knowledge, I love challenges and all the knowledge you get from them.
 
