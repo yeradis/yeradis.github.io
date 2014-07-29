@@ -40,7 +40,7 @@ First, we need to configure logstash to accept all logs coming from our applicat
 
 logstash.conf content:
 
-```java
+```
 input {
  log4j {
      mode => "server"
@@ -61,7 +61,7 @@ We are telling to logstash that there will be and input of type log4j that will 
 
 We that wonderful configuration is time to run logstath:
 
-```shell
+```
 java -jar logstash-1.2.2.dev-flatjar.jar agent -f logstash.conf -- web 
 ```
 
@@ -72,7 +72,7 @@ Time for the java app.
 
 First, the log4j config file, usually *log4j.properties*
 
-```java
+```
 # output messages to stdout and over the network
 log4j.rootLogger=ALL,stdout,S
 
