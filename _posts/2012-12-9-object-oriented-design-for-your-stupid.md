@@ -28,12 +28,12 @@ What characterizes **STUPID **code? What makes code **STUPID**?
 
 [**STUPID**][1]
 
-**S** ingleton
-**T** ight coupling
-**U** ntestability
-**P** remature Optimization
-**I** ndescriptive Naming
-**D** uplication
+* **S** ingleton
+* **T** ight coupling
+* **U** ntestability
+* **P** remature Optimization
+* **I** ndescriptive Naming
+* **D** uplication
 
 If you can find those patterns in your code, then your code is **STUPID**.
 
@@ -47,19 +47,19 @@ A collection of Object-oriented design principles for "good code".
 
 [**SOLID**][2]
 
-**S** ingle responsibility principle
-**O** pen/closed principle
-**L** iskov substitution principle
-**I** nterface segregation principle
-**D** ependency inversion principle
+* **S** ingle responsibility principle
+* **O** pen/closed principle
+* **L** iskov substitution principle
+* **I** nterface segregation principle
+* **D** ependency inversion principle
 
 [**GRASP**][3]
 
-**G** eneral
-**R** esponsibility
-**A** ssignment
-**S** oftware
-**P** atterns (or Principles)
+* **G** eneral
+* **R** esponsibility
+* **A** ssignment
+* **S** oftware
+* **P** atterns (or Principles)
 
 The different patterns and principles used in GRASP are: Controller, Creator, Indirection, Information Expert, High Cohesion, Low Coupling, Polymorphism, Protected Variations, and Pure Fabrication.
 
