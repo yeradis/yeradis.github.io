@@ -2,7 +2,7 @@
 layout: post
 title: Create a HTML Table with TSQLXML - SQLServer
 date: 2013-4-17
-tags: 
+tags: sqlxml tsql sqlserver xml html table
 comments: true
 permalink:
 share: true

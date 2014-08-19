@@ -2,7 +2,7 @@
 layout: post
 title: Making your f****** life easier with TSQL SQLXML and XQUERY on SQLServer
 date: 2013-4-26
-tags: 
+tags: sqlxml tsql sqlserver xml xquery
 comments: true
 permalink:
 share: true
@@ -22,24 +22,24 @@ over
 THE SAMPLE DATA:
 
 ```sql
-    /*******************************************
- 	* THE SAMPLE DATA, WITH AN ON MEMORY TABLE CALLED @SAMPLE_TABLE
- 	*******************************************/
+/*******************************************
+* THE SAMPLE DATA, WITH AN ON MEMORY TABLE CALLED @SAMPLE_TABLE
+*******************************************/
 DECLARE @SAMPLE1     XML,
         @SAMPLE2     XML
 
-SET @SAMPLE1 =  '< list >  
-                 < description id="1">description 1 in sample 1< /description>
-                 < description id="2">description 2 in sample 1< /description>
-                 < description id="3">description 3 in sample 1< /description>
-                 < description id="5">description 5 in sample 5< /description>
-               < /list >'
+SET @SAMPLE1 =  '<list>  
+                 <description id="1">description 1 in sample 1</description>
+                 <description id="2">description 2 in sample 1</description>
+                 <description id="3">description 3 in sample 1</description>
+                 <description id="5">description 5 in sample 5</description>
+               </list>'
 
-SET @SAMPLE2 = '< list >
-                 < description id="5">description 5 in sample 2< /description>
-                 < description id="4">description 4 in sample 2< /description>
-                 < description id="1">description 1 in sample 2< /description>
-               < /list >'
+SET @SAMPLE2 = '<list>
+                 <description id="5">description 5 in sample 2</description>
+                 <description id="4">description 4 in sample 2</description>
+                 <description id="1">description 1 in sample 2</description>
+               </list >'
                
 DECLARE @SAMPLE_TABLE TABLE([XML] XML)
 
@@ -51,9 +51,9 @@ INSERT INTO @SAMPLE_TABLE ([XML])VALUES (@SAMPLE2)
 Here is what you was looking for:
 
 ```sql
-	/*******************************************
- 	* STARTING HERE IS WHERE THE MAGIC HAPPENS
- 	*******************************************/
+/*******************************************
+* STARTING HERE IS WHERE THE MAGIC HAPPENS
+*******************************************/
 --filter this ID
 DECLARE @ID INT
 SET @ID = 5

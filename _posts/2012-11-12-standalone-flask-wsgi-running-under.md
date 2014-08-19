@@ -2,7 +2,7 @@
 layout: post
 title: Standalone Flask WSGI running under Tornado , Twisted or Built-in server
 date: 2012-11-12
-tags: 
+tags: python flask wsgi tornado twisted web
 comments: true
 permalink:
 share: true
@@ -12,44 +12,22 @@ Make your Flask Microframework stuff "portable" and ready for "production" with
 
 And if necessary, you can turn on the development server.
 
-
-
-
 Is true that "Micro" does not mean that your whole web application has to fit into a single Python file, but this sample goes in that way.
-
-
-
 
 I writing this, because the built-in server provided by Flask is great but just for development, can be tuned, still not good enough, so, what about if you want your flask ready for "production", something like serving 1000 request/s ?
 
-
-
-
 In this sample, you will find how to run your Flask WSGI under Tornado and Twisted, but in the embedded way.
-
-
-
 
 Just to remember:
 
-
-
-
 [Tornado][1] is an open source version of the scalable, non-blocking web server and tools that power FriendFeed.
-
-
-
 
 [Twisted][2] is an event-driven networking engine that supports many common network protocols, including SMTP, POP3, IMAP, SSHv2, and DNS.
 
 
-
-
 So, here you go:
 
-
-
-
+```python
 
     import optparse
     from flask import Flask
@@ -103,23 +81,7 @@ So, here you go:
     if __name__ == "__main__":
         main()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"));
+```
 
 [1]: http://www.tornadoweb.org/
 [2]: http://twistedmatrix.com/
