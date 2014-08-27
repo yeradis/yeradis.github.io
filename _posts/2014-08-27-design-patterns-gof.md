@@ -32,7 +32,7 @@ They are categorized in three groups:
 
 *  `Builder` 	Separates object construction from its representation - Separate the construction of a complex object from its representation so that the same construction process can create different representations.
 
-	![builder](../public/images/gof_builder_use_medium_low.gif) Frequency of use: _Medium low_
+	![builder](../public/images/use_medium_low.gif) Frequency of use: _Medium low_
 
 *  `Factory Method` 	Creates an instance of several derived classes - Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses. 
 	
@@ -78,7 +78,7 @@ They are categorized in three groups:
 ### Behavioral Patterns
 *  `Chain of Chain of Responsibility` 	A way of passing a request between a chain of objects - Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it. 
 	
-    ![](../public/images/gof_builder_use_medium_low.gif) Frequency of use: _Medium low_
+    ![](../public/images/use_medium_low.gif) Frequency of use: _Medium low_
     
 *  `Command` 	Encapsulate a command request as an object - Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations. 
 
