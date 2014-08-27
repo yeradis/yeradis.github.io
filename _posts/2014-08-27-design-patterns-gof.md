@@ -128,6 +128,7 @@ For more info:
 * http://en.wikipedia.org/wiki/Design_Patterns
 * http://en.wikipedia.org/wiki/Software_design_pattern.
 
+Source: http://www.dofactory.com/net/design-patterns
 
 
 [1]: http://www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf
