@@ -12,7 +12,7 @@ The `BIG BALL OF MUD` is still the most used software architecture design, is th
 
 Thats what you can read in a paper by Brian Foote and Joseph Yoder's.
 
-![Dung beetle](/public/pictures/escarabajo-pelotero.jpg)
+![Dung beetle](/public/images/escarabajo-pelotero.jpg)
 
 ## A paper with its origing in 1997
 
