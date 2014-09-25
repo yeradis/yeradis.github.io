@@ -21,7 +21,7 @@ Problem: Services starts/stops in and asyncronous way and i dont want to use `sc
 
 Here is my snippet:
 
-```vbscript
+```vbnet
 Sub WaitUntil(Query)
    Set wmi = GetObject("winmgmts://./root/cimv2")
    Do Until wmi.ExecQuery(Query).Count > 0
@@ -60,7 +60,7 @@ End Sub
 
 And i use it in this way:
 
-```vbscript
+```vbnet
     StartOrStopService "restart", "AppServer9PE-2"
 ```
 
