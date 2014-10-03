@@ -58,7 +58,7 @@ CREATE UNIQUE INDEX uix_article_sku ON article((item->>'sku'));
 Now, if you try to insert this:
 
 ~~~sql
-INSERT INTO article(item) VALUES('{
+INSERT INTO article(item) VALUES('
 {
     "id": 1,
     "price": 58.0
