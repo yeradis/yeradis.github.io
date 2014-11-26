@@ -15,7 +15,7 @@ title:            '@yeradis'
 tagline:          'Computer Science, Software, Development, Programming, Python, Java, MongoDB,Flask,RabbitMQ, Software Engineering'
 url:              http://yeradis.github.io
 shorturl:         yeradis.github.io
-
+baseurl: 	  "/blog"
 author:
   name:           'Yeradis P. Barbosa Marrero'
   url:            https://twitter.com/yeradis

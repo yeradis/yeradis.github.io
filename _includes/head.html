@@ -16,25 +16,25 @@
 
 
   <!-- Bootstrap Core CSS -->
-  <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ "/public/css/bootstrap.min.css" | prepend: site.baseurl }}">
 
 
 
     <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/poole.css">
-  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="{{ "/public/css/poole.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/public/css/syntax.css" | prepend: site.baseurl }}">
 
     <!-- Custom CSS -->
-  <link rel="stylesheet" href="/public/css/clean-blog.css">
-
-  <link rel="stylesheet" href="/public/css/main.css">
+  <link rel="stylesheet" href="{{ "/public/css/clean-blog.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/public/css/tags.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/public/css/main.css" | prepend: site.baseurl }}">
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="/public/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "/public/apple-touch-icon-144-precomposed.png" | prepend: site.baseurl }}">
+  <link rel="shortcut icon" href="{{ "/public/favicon.ico" | prepend: site.baseurl }}">
 
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "/atom.xml" | prepend: site.baseurl }}">
 
       <!-- Custom Fonts -->
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">

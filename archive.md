@@ -31,7 +31,9 @@ title: Archive
   <ul class="tag-box inline">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-    <li><a href="/tags/#{{ this_word | cgi_escape }}">{{ this_word }} <span>{{ site.tags[this_word].size }}</span></a></li>
+    {% assign url = "/tags/#" %}
+    <li><a href="{{ url  | prepend: site.baseurl }}{{ this_word | cgi_escape }}">{{ this_word }} <span>{{ site.tags[this_word].size }}</span></a></li>
+
   {% endunless %}{% endfor %}
   </ul>
 </div>
@@ -39,5 +41,5 @@ title: Archive
 ## Blog Posts
 
 {% for post in site.posts %}
-  * {{ post.date | date: "%B %e, %Y" }} &raquo; [ {{ post.title }} ]({{ post.url }})
+  * {{ post.date | date: "%B %e, %Y" }} &raquo; [ {{ post.title }} ]({{ post.url | prepend: site.baseurl }})
 {% endfor %}
