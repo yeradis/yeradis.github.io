@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Stop knocking a nail into wood using a saw and use the right language for the job
+title: "Stop knocking a nail into wood using a saw and use the right language for the job"
 date: 2014-12-17
 tags: apache thrift cross-language rpc framework
 comments: true
-permalink: “apache-thrift”
+permalink: "apache-thrift"
 share: true
 ---
 
