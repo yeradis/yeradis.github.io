@@ -14,17 +14,17 @@ We are always chasing those improvements, because, when the language fits the pr
 
 But, the major issue appears when you try to link solutions from different languages.
 
-To solve this, we have `Apache Trift`
+To solve this, we have `Apache Thrift`
 
-Apache Thrift solves problems associated with building applications which collaborate across language boundaries. In addition to normalizing data for cross language communications, Apache Thrift also provides a complete remoting framework making it trivial to build cross language networked services.
+`Apache Thrift` solves problems associated with building applications which collaborate across language boundaries. In addition to normalizing data for cross language communications, Apache Thrift also provides a complete remoting framework making it trivial to build cross language networked services.
 
 So, what exactly is Apache Thrift?
 
-Apache Thrift is an open source cross-language serialization and RPC framework. With support for over 15 programming languages, Apache Thrift can play an important role in a range of distributed application development environments. As a serialization platform Apache Thrift enables efficient cross language storage and retrieval of a wide range of data structures. As an RPC framework, Apache Thrift enables rapid development of complete polyglot services in a few lines of code. 
+`Apache Thrift` is an open source `cross-language` serialization and `RPC framework`. With support for over 15 programming languages, Apache Thrift can play an important role in a range of distributed application development environments. As a serialization platform Apache Thrift enables efficient cross language storage and retrieval of a wide range of data structures. As an RPC framework, Apache Thrift enables rapid development of complete polyglot services in a few lines of code. 
 
 Polyglot services? Yes!
 
-You can build services that work efficiently and seamlessly between C++, Java, Python, PHP, Ruby, Erlang, Perl, Haskell, C#, Cocoa, JavaScript, Node.js, Smalltalk, OCaml and Delphi and other languages.
+You can build services that work efficiently and seamlessly between `C++`, `Java`, `Python`, `PHP`, `Ruby`, `Erlang`, `Perl`, `Haskell`, `C#`, `Cocoa`, `JavaScript`, `Node.js`, `Smalltalk`, `OCaml` and `Delphi` and other languages.
 
 Apache Thrift allows you to define data types and service interfaces in a simple definition file. Taking that file as input, the compiler generates code to be used to easily build RPC clients and servers that communicate seamlessly across programming languages. Instead of writing a load of boilerplate code to serialize and transport your objects and invoke remote methods, you can get right down to business.
 Thrift definition example file:
