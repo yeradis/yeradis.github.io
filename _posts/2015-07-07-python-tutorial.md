@@ -11,7 +11,7 @@ share: true
 
 Python is a programming language that lets you work more quickly and integrate your systems more effectively. You can learn to use Python and see almost immediate gains in productivity and lower maintenance costs.
 
-The Python Tutorial 2.7 - unofficial is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License. Based on a work at http://ceylon-lang.org/documentation/1.0/tour.
+The Python Tutorial 2.7 - unofficial is based on a work available at https://docs.python.org/2/tutorial/index.html
 
 This book is just a compilation and the purpose is to provide the Python documentation in multiple formats, because the web is not the only place for reading xD
 
