@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Measuring pixel defects classes: The ISO-9241 way
+title: "Measuring pixel defects classes: The ISO-9241 way"
 date: 2011-4-7
 tags: 
 comments: true

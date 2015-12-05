@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Free ebook: Programming Windows Phone 7, by Charles Petzold
+title: "Free ebook: Programming Windows Phone 7, by Charles Petzold"
 date: 2011-10-1
 tags: programming windowsphone7 wp7 windowsphone book free mobile
 comments: true

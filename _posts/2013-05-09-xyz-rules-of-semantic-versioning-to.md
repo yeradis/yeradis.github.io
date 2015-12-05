@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [X].[Y].[Z] The rules of Semantic Versioning to fight the dependency hell
+title: "[X].[Y].[Z] The rules of Semantic Versioning to fight the dependency hell"
 date: 2013-5-9
 tags: 
 comments: true
