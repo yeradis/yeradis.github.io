@@ -1,11 +1,10 @@
 encoding: UTF-8
 # Dependencies
-markdown: redcarpet
-redcarpet:
-  extensions: ["tables","no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+markdown: kramdown
 
-#pygments:         true
-highlighter: pygments
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # Permalinks
 permalink:        pretty

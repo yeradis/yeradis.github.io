@@ -16,9 +16,11 @@ So the idea is to validate the certificate to ensure that is was signed by any o
 
 In this example we are going to implement the protocol NSURLSessionDelegate specifically the function which handles server certificate validation
 
-So lets "paste"
+So lets see the code
 
-```swift
+
+``` swift
+
 public func URLSession(session: NSURLSession, didReceiveChallenge challenge: NSURLAuthenticationChallenge, completionHandler: (NSURLSessionAuthChallengeDisposition, NSURLCredential?) -> Void) {
         
         if challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust {
@@ -62,7 +64,9 @@ public func URLSession(session: NSURLSession, didReceiveChallenge challenge: NSU
         }
 
     }
+
 ```
+
 
 So, trust or die xD
 
@@ -71,6 +75,7 @@ So, trust or die xD
 So insted of a list with files names, lets find all the "DER" files and load them into an array:
 
 ```swift
+
 	let enumerator = NSFileManager.defaultManager().enumeratorAtPath(NSBundle.mainBundle().bundlePath)
     while let filePath = enumerator?.nextObject() as? String {
     	if NSURL(fileURLWithPath: filePath).pathExtension == "der" {
@@ -79,6 +84,7 @@ So insted of a list with files names, lets find all the "DER" files and load the
             }
         }
     }
+
 ```
 
 
