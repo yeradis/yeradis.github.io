@@ -26,10 +26,7 @@ public func URLSession(session: NSURLSession, didReceiveChallenge challenge: NSU
         if challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust {
 
             let trust = challenge.protectionSpace.serverTrust
-            
-            print(challenge.protectionSpace)
-            print(challenge.protectionSpace.serverTrust)
-            
+                        
             let rootCaCerts = self.rootCACertificatesData.map() {
                 (data) -> CFData? in
                 return CFDataCreate(kCFAllocatorDefault, UnsafePointer(data.bytes), data.length)
