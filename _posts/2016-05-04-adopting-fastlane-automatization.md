@@ -45,8 +45,6 @@ Because just taking into account the binary build time plus iTunes related stuff
 
 Of course, the duration can be different depending on some miracles (cof cof <a href="https://twitter.com/hashtag/iosprocessingtime">#iosprocessingtime</a>).
 
-&nbsp;
-
 So publishing a new version to iTunes App Store is very awkward and time consuming.
 
 But, no more!
