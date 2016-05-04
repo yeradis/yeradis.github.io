@@ -11,7 +11,7 @@ share: true
 
 &nbsp;
 
-For those who don't know:  <a href="https://fastlane.tools/">Fastlane</a> is the Holy Grail (the one that Indiana Jones was really looking for, if only he had been a programmer)
+For those who don't know:  <a href="https://fastlane.tools/">Fastlane</a> is the Holy Grail (the one that Indiana Jones was really looking for, if only he had been an iOS programmer)
 
 <a href="https://fastlane.tools/">Fastlane</a> helps you automate every aspect of your release to the App Store.
 
