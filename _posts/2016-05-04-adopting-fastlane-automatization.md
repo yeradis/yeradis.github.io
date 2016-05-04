@@ -54,41 +54,11 @@ Now with a single command:
 <script src="https://gist.github.com/yeradis/0327d9a9f26e86e8d32a07df9e325f5b.js"></script>I do all these steps:
 
 <ul>
-<ul>
 	<li>Increment project build number</li>
-</ul>
-</ul>
-
-&nbsp;
-
-<ul>
-<ul>
 	<li>Download up-to date provisioning profiles for code signing</li>
-</ul>
-</ul>
-
-&nbsp;
-
-<ul>
-<ul>
 	<li>Build/Archive the app using the correct scheme (QuitNow or QuitNow Pro)</li>
-</ul>
-</ul>
-
-&nbsp;
-
-<ul>
-<ul>
 	<li>Notify to channels (cli, slack, mac os x notification center)</li>
-</ul>
-</ul>
-
-&nbsp;
-
-<ul>
-<ul>
 	<li>Upload a perfectly signed binary to TestFlight/Crashlytics for Beta testers to try</li>
-</ul>
 </ul>
 
 &nbsp;
