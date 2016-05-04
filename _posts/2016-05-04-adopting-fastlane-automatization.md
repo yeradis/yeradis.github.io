@@ -72,13 +72,13 @@ Now with a single command:
 </ul>
 
  And i just need to use my time in another task while Fastlane save me 30 minutes.
-
+&nbsp;
 <img class="aligncenter wp-image-567 size-full" src="http://fewlaps.com/wp-content/uploads/2016/04/Screen-Shot-2016-04-27-at-14.57.21.png" alt="Screen Shot 2016-04-27 at 14.57.21" width="639" height="711" />
-
+&nbsp;
 The last step: "<strong>notification</strong>" , puts a message at the console and also at the notification center.... a reminder like:
-
+&nbsp;
 <a href="http://fewlaps.com/wp-content/uploads/2016/04/Screen-Shot-2016-04-28-at-10.27.45.png"><img class="aligncenter wp-image-581 size-full" src="http://fewlaps.com/wp-content/uploads/2016/04/Screen-Shot-2016-04-28-at-10.27.45.png" alt="Screen Shot 2016-04-28 at 10.27.45" width="312" height="197" /></a>
-
+&nbsp;
 Fastlane<strong> pilot_free</strong> task looks like this:<script src="https://gist.github.com/yeradis/aec5aa8b0c75e4fa45de2eb016a1d6c3.js"></script>
 
 You can improve the process to fit your needs, including running test, syncing changes from remote repositories and much more.
