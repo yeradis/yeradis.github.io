@@ -1,5 +1,3 @@
-2016-06-10-alternative-delegate-testing.md
-
 ---
 layout: post
 title: 'Skip the regular iOS launch sequence when testing using an alternative application delegate'
