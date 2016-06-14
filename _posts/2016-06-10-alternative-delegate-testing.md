@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Skip the regular iOS launch sequence when testing using an alternative application delegate'
+title: 'Speed up iOS tests using an alternative application delegate'
 tags: ios testing
 comments: true
 permalink: alternative-delegate-testing
