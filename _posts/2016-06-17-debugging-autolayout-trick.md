@@ -35,7 +35,7 @@ Now, lets use the constraint `identifier` property:
 
 Really nice, right? 
 
-Another nice thing we get using those properties, is that we can search search in XCode those identifiers :3
+Another nice thing we get using these properties, is that we can search in XCode for those identifiers :3
 
 But lets go deeper.
 
