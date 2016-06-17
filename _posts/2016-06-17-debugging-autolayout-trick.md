@@ -13,11 +13,11 @@ Specially when there is a "complicated" layout and your friend "the unsatisfiabl
 
 Mainly because you (and me) don't understand that log printed in the console. 
 
-Because, lets be honest, having memory address reference plus the Auto Layout Visual Format Language is not something "human readable" (Not if you came from another languages, where the developer experience is better)
+Because, lets be honest, having a memory address reference plus the Auto Layout Visual Format Language is not something "human readable" (Not if you came from another languages, where the developer experience is better)
 
 So, before you close this page, let me tell you the trick: `accesibilityIdentifier` and contraint `identifier` property.
 
-As simple as that, use those properties and your printed log will turn into something almos friendly xD
+As simple as that, use those properties and your printed log will turn into something almost friendly xD
 
 Let me show you some examples.
 
@@ -62,10 +62,12 @@ Its something better.
 Also, just in case, the address reference is there, but is something that can be removed.
 
 I was able to get that format thanks to a category available in [Mansonry](https://github.com/SnapKit/Masonry)
-Specially the category that allows to override the `NSLayoutConstraint description`. Check this: https://github.com/SnapKit/Masonry#when-the--hits-the-fan
+Specially the category that allows to override the `NSLayoutConstraint description`. 
+
+Check this: [](https://github.com/SnapKit/Masonry#when-the--hits-the-fan)
 
 But my interest was only related to override that console output to make it friendly.
 
-So, in case you want to use it without depending on `Mansonry`, you can get a modified version available at: https://github.com/yeradis/objetivec-steroids
+So, in case you want to use it without depending on `Mansonry`, you can get a modified version available at: [](https://github.com/yeradis/objetivec-steroids)
 
 And thats all folks.
