@@ -62,12 +62,13 @@ Its something better.
 Also, just in case, the address reference is there, but is something that can be removed.
 
 I was able to get that format thanks to a category available in [Mansonry](https://github.com/SnapKit/Masonry)
+
 Specially the category that allows to override the `NSLayoutConstraint description`. 
 
-Check this: [https://github.com/SnapKit/Masonry#when-the--hits-the-fan]()
+Check this: [https://github.com/SnapKit/Masonry#when-the--hits-the-fan](https://github.com/SnapKit/Masonry#when-the--hits-the-fan)
 
 But my interest was only related to override that console output to make it friendly.
 
-So, in case you want to use it without depending on `Mansonry`, you can get a modified version available at: [https://github.com/yeradis/objetivec-steroids]()
+So, in case you want to use it without depending on `Mansonry`, you can get a modified version available at: [https://github.com/yeradis/objetivec-steroids](https://github.com/yeradis/objetivec-steroids)
 
 And thats all folks.
