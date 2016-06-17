@@ -33,7 +33,9 @@ Now, lets use the constraint `identifier` property:
 
 <script src="https://gist.github.com/yeradis/b9f3faf340765339af0fb09a0ecd9dfc.js?file=autolayout_error_after_accesibilityIdentifierAndContraintIdentifier.log"></script>
 
-Really nice, right?
+Really nice, right? 
+
+Another nice thing we get using those properties, is that we can search search in XCode those identifiers :3
 
 But lets go deeper.
 
