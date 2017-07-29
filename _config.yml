@@ -2,9 +2,11 @@ encoding: UTF-8
 # Dependencies
 markdown: kramdown
 
+# Syntax highlighting
+highlighter: rouge
 kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+    input: GFM 
+    syntax_highlighter: rouge
 
 # Permalinks
 permalink:        pretty

@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: page
 title: Tag Index
-description: "An archive of posts sorted by tag."
+subtitle: "An archive of posts sorted by tag."
 ---
 
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
@@ -10,7 +10,6 @@ description: "An archive of posts sorted by tag."
 <!-- tag_words: {{ tag_words }} -->
 
 <div id="tags">
-  <h1>Tags</h1>
   <ul class="tag-box inline">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
@@ -24,7 +23,7 @@ description: "An archive of posts sorted by tag."
   <h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
   <ul class="posts">
     {% for post in site.tags[this_word] %}{% if post.title != null %}
-    <li itemscope><span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span> &raquo; <a href="{{ post.url  | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    <li itemscope><span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span> &raquo; <a href="{{ post.url  | prepend: site.baseurl }}"><h3>{{ post.title }}</h3></a></li>
     {% endif %}{% endfor %}
   </ul>
   {% endunless %}{% endfor %}

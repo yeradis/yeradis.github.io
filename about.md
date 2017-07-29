@@ -1,17 +1,9 @@
 ---
 layout: page
 title: About
+subtitle: YERADIS P. BARBOSA MARRERO
+header-img: /public/images/bg-wide.jpg
 ---
-
-<!--
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
--->
-
-## HELLO, I AM *YERADIS P. BARBOSA MARRERO*
-
-<img src="/public/images/bg-wide.jpg">
 
 I am a tireless autodidact with a thirst for knowledge, I love challenges and all the knowledge you get from them.
 

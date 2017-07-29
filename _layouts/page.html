@@ -2,7 +2,27 @@
 layout: default
 ---
 
-<div class="page">
-  <h1 class="page-title">{{ page.title }}</h1>
-  {{ content }}
+<header class="intro-header" style="background-image: url('{{ page.header-img | prepend: site.baseurl }}'); background-color:black;">
+  <div class="container">
+  <div class="row">
+      <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0">
+          <div class="post-heading">
+              <h1>{{ page.title }}</h1>
+              {% if page.subtitle %}
+              <h2 class="subheading">{{ page.subtitle }}</h2>
+              {% endif %}
+          </div>
+      </div>
+  </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0">
+
+      {{ content }}
+
+    </div>
+  </div>
 </div>

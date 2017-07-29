@@ -23,7 +23,7 @@ Let me show you some examples.
 
 Before using the `accesibiltyIdentifier` property and without constraint `identifier`:
 
-```objc
+``` objc
 2016-06-16 10:22:24.414 QNChat[90514:8499728] Unable to simultaneously satisfy constraints.
 	Probably at least one of the constraints in the following list is one you don't want. 
 	Try this: 
@@ -45,11 +45,43 @@ Will attempt to recover by breaking constraint
 
 After applying some `accesibilityIdentifier`:
 
-<script src="https://gist.github.com/yeradis/b9f3faf340765339af0fb09a0ecd9dfc.js?file=autolayout_error_after_accesibilityIdentifier.log"></script>
+```objc
+2016-06-16 10:17:54.528 QNChat[90242:8483681] Unable to simultaneously satisfy constraints.
+	Probably at least one of the constraints in the following list is one you don't want. 
+	Try this: 
+		(1) look at each constraint and try to figure out which you don't expect; 
+		(2) find the code that added the unwanted constraint or constraints and fix it. 
+(
+    "<NSLayoutConstraint:0x7fb2451f8d70 V:|-(33)-[cell_contentLabel]   (Names: cell_contentLabel:0x7fb24530e6b0, cell_box:0x7fb242d0ff10, '|':cell_box:0x7fb242d0ff10 )>",
+    "<NSLayoutConstraint:0x7fb2453001a0 V:[cell_contentLabel]-(29)-|   (Names: cell_box:0x7fb242d0ff10, cell_contentLabel:0x7fb24530e6b0, '|':cell_box:0x7fb242d0ff10 )>",
+    "<NSLayoutConstraint:0x7fb24507d2e0 UITableViewCellContentView:0x7fb242e604d0.topMargin == cell_box.top   (Names: cell_box:0x7fb242d0ff10 )>",
+    "<NSLayoutConstraint:0x7fb245089e90 UITableViewCellContentView:0x7fb242e604d0.bottomMargin == cell_box.bottom   (Names: cell_box:0x7fb242d0ff10 )>",
+    "<NSLayoutConstraint:0x7fb2450251e0 V:[cell_contentLabel(>=86.3333)]   (Names: cell_contentLabel:0x7fb24530e6b0 )>",
+    "<NSLayoutConstraint:0x7fb2453537d0 'UIView-Encapsulated-Layout-Height' V:[UITableViewCellContentView:0x7fb242e604d0(164.333)]>"
+)
+
+Will attempt to recover by breaking constraint 
+<NSLayoutConstraint:0x7fb2450251e0 V:[cell_contentLabel(>=86.3333)]   (Names: cell_contentLabel:0x7fb24530e6b0 )>
+```
 
 Now, lets use the constraint `identifier` property:
 
-<script src="https://gist.github.com/yeradis/b9f3faf340765339af0fb09a0ecd9dfc.js?file=autolayout_error_after_accesibilityIdentifierAndContraintIdentifier.log"></script>
+```objc
+2016-06-16 10:28:10.826 QNChat[90865:8520702] Unable to simultaneously satisfy constraints.
+	Probably at least one of the constraints in the following list is one you don't want. 
+	Try this: 
+		(1) look at each constraint and try to figure out which you don't expect; 
+		(2) find the code that added the unwanted constraint or constraints and fix it. 
+(
+    "<NSLayoutConstraint:0x7fbe004f5a30 'id10' UITableViewCellContentView:0x7fbe004bc6e0.bottomMargin == cell_box.bottom   (Names: cell_box:0x7fbe004c0000 )>",
+    "<NSLayoutConstraint:0x7fbe028161e0 'id15' V:[cell_box(>=183)]   (Names: cell_box:0x7fbe004c0000 )>",
+    "<NSLayoutConstraint:0x7fbe004ec860 'id6' UITableViewCellContentView:0x7fbe004bc6e0.topMargin == cell_box.top   (Names: cell_box:0x7fbe004c0000 )>",
+    "<NSLayoutConstraint:0x7fbe028476b0 'UIView-Encapsulated-Layout-Height' V:[UITableViewCellContentView:0x7fbe004bc6e0(199)]>"
+)
+
+Will attempt to recover by breaking constraint 
+<NSLayoutConstraint:0x7fbe028161e0 'id15' V:[cell_box(>=183)]   (Names: cell_box:0x7fbe004c0000 )>
+```
 
 Really nice, right? 
 
@@ -59,7 +91,23 @@ But lets go deeper.
 
 What about the [Visual Format Language](https://developer.apple.com/library/prerelease/content/documentation/UserExperience/Conceptual/AutolayoutPG/VisualFormatLanguage.html#//apple_ref/doc/uid/TP40010853-CH27-SW3) ?
 
-<script src="https://gist.github.com/yeradis/b9f3faf340765339af0fb09a0ecd9dfc.js?file=autolayout_error_before_category.log"></script>
+```objc
+2016-06-17 23:05:13.817 QNChat[16948:11377878] Unable to simultaneously satisfy constraints.
+	Probably at least one of the constraints in the following list is one you don't want. 
+	Try this: 
+		(1) look at each constraint and try to figure out which you don't expect; 
+		(2) find the code that added the unwanted constraint or constraints and fix it. 
+(
+    "<NSLayoutConstraint:0x7fc045aa5c50 cell_avatar.top == cell_box.top   (Names: cell_avatar:0x7fc0436f76e0, cell_box:0x7fc0436676c0 )>",
+    "<NSLayoutConstraint:0x7fc045ab8fb0 'id1' UITableViewCellContentView:0x7fc043693f90.topMargin == cell_avatar.top   (Names: cell_avatar:0x7fc0436f76e0 )>",
+    "<NSLayoutConstraint:0x7fc0436eee00 'id10' UITableViewCellContentView:0x7fc043693f90.bottomMargin == cell_box.bottom   (Names: cell_box:0x7fc0436676c0 )>",
+    "<NSLayoutConstraint:0x7fc0459d9d60 'id15' V:[cell_box(<=83)]   (Names: cell_box:0x7fc0436676c0 )>",
+    "<NSLayoutConstraint:0x7fc0436e4300 'UIView-Encapsulated-Layout-Height' V:[UITableViewCellContentView:0x7fc043693f90(285.667)]>"
+)
+
+Will attempt to recover by breaking constraint 
+<NSLayoutConstraint:0x7fc0459d9d60 'id15' V:[cell_box(<=83)]   (Names: cell_box:0x7fc0436676c0 )>
+```
 
 Having something like :
 
@@ -69,7 +117,23 @@ Having something like :
 
 Is something i think that can be improved and this is what i see now:
 
-<script src="https://gist.github.com/yeradis/b9f3faf340765339af0fb09a0ecd9dfc.js?file=autolayout_error_after_category.log"></script>
+```objc
+2016-06-17 23:10:43.964 QNChat[17383:11384401] Unable to simultaneously satisfy constraints.
+	Probably at least one of the constraints in the following list is one you don't want. 
+	Try this: 
+		(1) look at each constraint and try to figure out which you don't expect; 
+		(2) find the code that added the unwanted constraint or constraints and fix it. 
+(
+    "<NSLayoutConstraint:0x7fdb9da6c5c0 UIImageView:cell_avatar[0x7fdb9dba8700].top == UIView:cell_box[0x7fdb9b543e60].top>",
+    "<NSLayoutConstraint:id1[0x7fdb9b5f5580] UITableViewCellContentView:0x7fdb9b5001c0.topMargin == UIImageView:cell_avatar[0x7fdb9dba8700].top>",
+    "<NSLayoutConstraint:id10[0x7fdb9b5f7b20] UITableViewCellContentView:0x7fdb9b5001c0.bottomMargin == UIView:cell_box[0x7fdb9b543e60].bottom>",
+    "<NSLayoutConstraint:id15[0x7fdb9b5cd8d0] UIView:cell_box[0x7fdb9b543e60].height <= 83>",
+    "<NSLayoutConstraint:UIView-Encapsulated-Layout-Height[0x7fdb9da7da40] UITableViewCellContentView:0x7fdb9b5001c0.height == 285.667>"
+)
+
+Will attempt to recover by breaking constraint 
+<NSLayoutConstraint:id15[0x7fdb9b5cd8d0] UIView:cell_box[0x7fdb9b543e60].height <= 83>
+```
 
 Don´t know about you, but for me having this:
 

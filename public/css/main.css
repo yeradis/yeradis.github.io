@@ -2,15 +2,13 @@
 	padding-bottom: 2.5rem;
 }
 .navbar-brand {
-	font-size: 1.25rem;
-	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 800;
 	color: #505050;
 }
 
 a {
-	color: #0085a1;
-	text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover, a:focus {
@@ -37,85 +35,35 @@ blockquote p {
   display: inline;
 }
 
-/*
-.post p {
-  margin-right: 5%;
-  margin-left: 5%;
-}
+.container pre, .container .gist-file  {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
 
-.post blockquote {
-  margin-right: 15%;
-  margin-left: 15%;
-}
-
-.post blockquote p{
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-}
-
-ul p {
-  margin-right: 0px !important;
-  margin-left: 0px !important;
-}
-
-.post h1 {
-  margin-right: 5em;
-  margin-left: 5em;
-}
-
-.post span {
-  margin-right: 10em;
-  margin-left: 10em;
-}
-
-.post ul {
-  margin-right: 15em;
-  margin-left: 15em;
-}
-
-*/
-
-.post h1, p, span, ul, blockquote, #tags { 
-  margin-right: 15%;
-  margin-left: 15%;
-}
-
-.pager, .related, #disqus_thread { 
-  margin-right: 15%;
-  margin-left: 15%;
-}
-
-.related ul {
-  margin-right: 0px !important;
-  margin-left: 0px !important;
-}
-
-#tags ul span {
-  margin-right: 0px !important;
-  margin-left: 0px !important;
-}
-
-.intro-header h1, p, span, ul, blockquote{ 
-  margin-right: 15%;
-  margin-left: 15%;
+  padding: 40px !important;
+  border-top-color: black !important;
+  border-bottom-color: black !important;
+  margin-bottom: 30px;
 }
 
 pre {
-  border-top-width: .25em !important;
-  border-top-color: black !important;
-  border-bottom-width: .25em !important;
-  border-bottom-color: black !important;
+  text-align: center; 
 }
 
-.gist-file  {
-  border-top-width: .25em !important;
-  border-top-color: black !important;
-  border-bottom-width: .25em !important;
-  border-bottom-color: black !important;
+pre code{
+  display: inline-block;
+  text-align: left;
+  width: 90%;
 }
 
-/* Custom container */
-.container-full {
-  margin: 0 auto;
-  width: 100%;
+.post a {
+  padding: 2px 4px;
+  font-size: 85%;
+  color: black;
+  background-color:#f5f5f5;
+  border-radius: 4px;
+}
+
+p {
+    margin: 30px 0 !important;
 }
