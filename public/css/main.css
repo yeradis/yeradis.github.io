@@ -36,3 +36,86 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+
+/*
+.post p {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.post blockquote {
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.post blockquote p{
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+ul p {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+.post h1 {
+  margin-right: 5em;
+  margin-left: 5em;
+}
+
+.post span {
+  margin-right: 10em;
+  margin-left: 10em;
+}
+
+.post ul {
+  margin-right: 15em;
+  margin-left: 15em;
+}
+
+*/
+
+.post h1, p, span, ul, blockquote, #tags { 
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.pager, .related, #disqus_thread { 
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.related ul {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+#tags ul span {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+.intro-header h1, p, span, ul, blockquote{ 
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+pre {
+  border-top-width: .25em !important;
+  border-top-color: black !important;
+  border-bottom-width: .25em !important;
+  border-bottom-color: black !important;
+}
+
+.gist-file  {
+  border-top-width: .25em !important;
+  border-top-color: black !important;
+  border-bottom-width: .25em !important;
+  border-bottom-color: black !important;
+}
+
+/* Custom container */
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
