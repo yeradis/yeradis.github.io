@@ -49,5 +49,5 @@ pages_list:
 
 # Allow URL Redirects:
 #  * https://help.github.com/articles/redirects-on-github-pages
-gems:
+plugins:
   - jekyll-redirect-from
