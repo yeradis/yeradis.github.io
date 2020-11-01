@@ -9,37 +9,37 @@ kramdown:
     syntax_highlighter: rouge
 
 # Permalinks
-permalink:        pretty
+permalink: pretty
 
 # Setup
-title:            '@yeradis'
-welcome:        'Hello I’m Yeradis'
-experience:     'Building native software solutions for more than 19 years'
+title: '@yeradis'
+welcome: 'Hello I’m Yeradis'
+experience: 'Building native software solutions for more than 19 years'
 summary: |
   I have experience developing  native mobile, desktop and server applications for: Hotels, Hotel Chains,
   Online Travel Agencies, Warehouse management, Premium Social Networks, Casinos, Point of Sale, Accounting,
   Billing, Booking (hotels, restaurants,  flights, insurance, cars, bus, train, bikes, taxis, etc),
   Customer services, e-Commerce and many more. <br>
 
-tagline:          'Computer Science, Software, Development, Programming, Python, Java, MongoDB,Flask,RabbitMQ, Software Engineering'
-url:              http://yeradis.github.io
-shorturl:         yeradis.github.io
-baseurl: 	  ""
+tagline: 'Computer Science, Software, Development, Programming, Python, Java, MongoDB,Flask,RabbitMQ, Software Engineering'
+url: http://yeradis.github.io
+shorturl: yeradis.github.io
+baseurl: ""
 author:
-  name:           'Yeradis P. Barbosa Marrero'
-  url:            https://twitter.com/yeradis
-  twitter:		  yeradis
+  name: 'Yeradis P. Barbosa Marrero'
+  url: https://twitter.com/yeradis
+  twitter: yeradis
   facebook:
-  github:		  yeradis
-  linkedin:		  yeradis
+  github: yeradis
+  linkedin: yeradis
 
-paginate:         5
+paginate: 200
 
 # Custom vars
-version:          1.0.0
+version: 1.0.0
 
 github:
-  repo:           github.com/yeradis/yeradis.github.io
+  repo: github.com/yeradis/yeradis.github.io
 
 # This is the list of pages to incldue in the header of the website.
 pages_list:
