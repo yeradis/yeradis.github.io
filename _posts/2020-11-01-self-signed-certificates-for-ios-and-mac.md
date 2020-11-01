@@ -30,35 +30,36 @@ So, here is what we need to do:
 
 ## Create a CA Root certificate:
 
-```cli
-openssl genrsa -out ca.key 4096
-openssl req -x509 -new -nodes -sha256 -days 365 -key ca.key -subj "/O=Development/CN=Development Root CA" -out ca.crt
+```bash
+$ openssl genrsa -out ca.key 4096
+
+$ openssl req -x509 -new -nodes -sha256 -days 365 -key ca.key -subj "/O=Development/CN=Development Root CA" -out ca.crt
 ```
 
 ## Add CA Root certificate to the system trust zone
 
-iOS -> https://support.apple.com/en-us/HT204477
+You need to add the CA Root certificate to the trust zone on (iOS)[https://support.apple.com/en-us/HT204477] and (macOS)[https://support.apple.com/guide/keychain-access/change-the-trust-settings-of-a-certificate-kyca11871/mac]
 
-MacOS -> https://support.apple.com/guide/keychain-access/change-the-trust-settings-of-a-certificate-kyca11871/mac
 
 ## Create the Server certificate
 
-```
-openssl req -newkey rsa:4096 -nodes -keyout server.key -subj "/O=Development/CN=*.local.dev" -out server.csr
-openssl x509 -req -sha256 -days 365 -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out server.crt -extfile <(printf "subjectAltName=DNS:*.local.dev")
+```bash
+$ openssl req -newkey rsa:4096 -nodes -keyout server.key -subj "/O=Development/CN=*.local.dev" -out server.csr
+
+$ openssl x509 -req -sha256 -days 365 -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out server.crt -extfile <(printf "subjectAltName=DNS:*.local.dev")
 ```
 
 ## Extra: Create PKCS12 keystore if needed for your server
 
-```
-openssl pkcs12 -export -in server.crt -inkey server.key -certfile server.crt -out server.p12
+```bash
+$ openssl pkcs12 -export -in server.crt -inkey server.key -certfile server.crt -out server.p12
 ```
 
 ## Configue your Server with the new certificate
 
 For example to enable HTTPS in Spring Boot and use the self-signed certificate, you can use something like:
 
-```
+```yaml
 server.port=8443
 
 server.ssl.enabled=true
@@ -72,8 +73,8 @@ security.require-ssl=true
 
 ## Check if generated Server certificate pass App Transport Security Diagnostics
 
-```
-nscurl --ats-diagnostics https://subdomain.local.dev
+```bash
+$ nscurl --ats-diagnostics https://subdomain.local.dev
 ```
 
 ## END
