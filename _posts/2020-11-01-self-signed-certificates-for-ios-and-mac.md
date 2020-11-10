@@ -33,7 +33,7 @@ So, here is what we need to do:
 ```bash
 $ openssl genrsa -out ca.key 4096
 
-$ openssl req -x509 -new -nodes -sha256 -days 365 -key ca.key -subj "/O=Development/CN=Development Root CA" -out ca.crt
+$ openssl req -x509 -new -nodes -days 365 -key ca.key -subj "/O=Development/CN=Development Root CA" -out ca.crt
 ```
 
 ## Add CA Root certificate to the system trust zone
@@ -46,7 +46,7 @@ You need to add the CA Root certificate to the trust zone on (iOS)[https://suppo
 ```bash
 $ openssl req -newkey rsa:4096 -nodes -keyout server.key -subj "/O=Development/CN=*.local.dev" -out server.csr
 
-$ openssl x509 -req -sha256 -days 365 -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out server.crt -extfile <(printf "subjectAltName=DNS:*.local.dev")
+$ openssl x509 -req -days 365 -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out server.crt -extfile <(printf "extendedKeyUsage=serverAuth\nsubjectAltName=DNS:*.local.dev")
 ```
 
 ## Extra: Create PKCS12 keystore if needed for your server
