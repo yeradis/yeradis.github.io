@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Do not interrupt me bitch! i'm a programmer...!
+title: Do not interrupt me i'm a programming...!
 date: 2014-7-2
 tags: 
 comments: true
