@@ -51,6 +51,16 @@
                         </a>
                     </li>
                     {% endif %}
+                    {% if site.author.mastodon %}
+                    <li>
+                        <a rel="me" href="https://mastodon.social/@{{ site.author.linkedin }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-brands fa-mastodon fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
                 </ul>
                 <p class="copyright text-muted">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}</p>
             </div>
