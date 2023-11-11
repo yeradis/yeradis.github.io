@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Some shit for your javascript: The Module Pattern'
+title: 'Better Javascript: The Module Pattern'
 tags: js programming development language javascript design pattern module
 comments: true
 permalink: javascript-module-pattern
